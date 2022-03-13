@@ -1,12 +1,13 @@
 from parse import parse
 
-import sys
+import sys, variables
 
-config = {
-    "current_scope": None
-}
-functions = {}
-variables = {}
+variables.init()
+# config = {
+#     "current_scope": None
+# }
+# functions = {}
+# variables = {}
 
 filename = None
 if len(sys.argv) > 1:
@@ -16,4 +17,4 @@ else:
     sys.exit()
 
 with open(filename, 'r') as f:
-    parse(f.read(), config, functions, variables)
+    parse(f.read())

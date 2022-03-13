@@ -1,8 +1,16 @@
 from objects import Function
 from utils import get_value
+import variables as _variables
 
-def parse(lines, config, functions, variables):
-    for line in lines.split('\n'):
+def parse(lines, variables={}):
+    config = _variables.config
+    functions = config['functions']
+    variables = {**config['variables'], **variables}
+
+    lines = lines.split('\n')
+    for line_number in range(len(lines)):
+        line = lines[line_number]
+        config['line'] = line_number + 1
         if config["current_scope"] == None:
             keyword = line.split(' ')[0]
 
@@ -73,7 +81,7 @@ def parse(lines, config, functions, variables):
                 else:
                     function_variables = {}
 
-                parse("\n".join(function.lines), config, functions, {**function_variables, **variables})
+                parse("\n".join(function.lines), function_variables)
             # Create a variable
             elif keyword == "define":
                 line_list = line.split(' ')
