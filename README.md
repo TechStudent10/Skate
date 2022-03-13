@@ -2,7 +2,7 @@
 A custom programming language written in Python.
 
 ## How?
-It's basically string manipulation. I have no idea what a lexer and token in the language-making world is, so basically I strip, split, replace, etc. strings.
+It's basically string manipulation. I have no idea what lexers or tokens are in the programming language-making world is, so basically I strip, split, replace, etc. strings.
 
 ## Setup
 
