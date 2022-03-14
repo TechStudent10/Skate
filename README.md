@@ -2,11 +2,11 @@
 A custom programming language written in Python.
 
 ## How?
-It's basically string manipulation. I have no idea what lexers or tokens are in the programming language-making world is, so basically I strip, split, replace, etc. strings.
+It's basically string manipulation. I have no idea what lexers or tokens are in the programming language-making world, so basically I strip, split, replace, etc. strings.
 
 ## Setup
 
-Make sure you Python 3.7 or higher.
+Make sure you have Python 3.7 or higher.
 
 ### Step 1: Get the source code
 You do this in two ways: The first is to download the source code directly from GitHub. You can do this by clicking on the `Code` button, pressing `Download ZIP` then extracting it.
@@ -30,6 +30,22 @@ This will run `test.sk`
 
 ## Documentation
 WIP
+
+## To Do List
+*Key:*
+```
+✔️ = Implemented
+🧑🏾‍💻 = Working On It
+✖️ = Not Yet Implemented
+❌ = Not Comming to the language
+```
+
+- ✔️ Functions 
+- ✔️ Variables
+- ✔️ Simple `print` function
+- 🧑🏾‍💻 Return in Functions
+- ✖️ Compile to executable
+- ✖️ Classes
 
 ## Contributing
 Contributing can be as simple as opening an issue for a bug or feature request. If you want to implement a feature or fix a bug, try it (even though my code is very messy at the moment) and open a PR.
